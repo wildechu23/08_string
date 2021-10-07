@@ -1,8 +1,11 @@
-all: string.o
-	gcc -o string string.o
+all: main.o mystring.o
+	gcc -o mystring main.o mystring.o
 
-string.o: string.c
-	gcc -c string.c
+main.o: main.c mystring.h
+	gcc -c main.c
+
+mystring.o: mystring.c mystring.h
+	gcc -c mystring.c
 
 run:
-	./string
+	./mystring
