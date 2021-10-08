@@ -42,6 +42,7 @@ char * mystrncpy(char *dest, char *source, int n) {
 }
 
 char * mystrcat(char *dest, char *source) {
+	// printf("%s, %s\n", dest, source);
 	char *start = dest;
 	//printf("%d", mystrlen(dest));
 	while(*dest) *dest++;
@@ -67,6 +68,10 @@ int mystrcmp(char *s1, char *s2) {
 
 char * mystrchr(char *s, char c) {
 	while(*s) {
-		if(*s++ == c) return s;
+		if(*s == c) return s;
+		*s++;
+	}
+	if(c == 0) {
+		return s;
 	}
 }

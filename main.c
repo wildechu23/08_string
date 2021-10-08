@@ -19,8 +19,8 @@ int main() {
   printf("[standard]:\t%lu\n", strlen(s2) );
   printf("[mine]:\t\t%d\n", mystrlen(s2) );
 
-//  printf("\nTesting strcpy(s1, s2):\n");
-//  printf("[standard]:\t[%s]\n", strcpy(s1, s2) );
+ printf("\nTesting strcpy(s1, s2):\n");
+ printf("[standard]:\t[%s]\n", strcpy(s1, s2) );
 //  printf("[mine]:\t\t[%s]\n", mystrcpy(s1, s2) );
 
   printf("\nTesting strncpy(s1, s3, 3):\n");
